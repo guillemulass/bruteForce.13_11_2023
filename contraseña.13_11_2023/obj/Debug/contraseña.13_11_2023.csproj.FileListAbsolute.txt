@@ -1,0 +1,7 @@
+C:\Users\guill\RiderProjects\contraseña.13_11_2023\contraseña.13_11_2023\bin\Debug\contraseña._13_11_2023.exe
+C:\Users\guill\RiderProjects\contraseña.13_11_2023\contraseña.13_11_2023\bin\Debug\contraseña._13_11_2023.pdb
+C:\Users\guill\RiderProjects\contraseña.13_11_2023\contraseña.13_11_2023\obj\Debug\contraseña.13_11_2023.csproj.AssemblyReference.cache
+C:\Users\guill\RiderProjects\contraseña.13_11_2023\contraseña.13_11_2023\obj\Debug\contraseña.13_11_2023.csproj.SuggestedBindingRedirects.cache
+C:\Users\guill\RiderProjects\contraseña.13_11_2023\contraseña.13_11_2023\obj\Debug\contraseña.13_11_2023.csproj.CoreCompileInputs.cache
+C:\Users\guill\RiderProjects\contraseña.13_11_2023\contraseña.13_11_2023\obj\Debug\contraseña._13_11_2023.exe
+C:\Users\guill\RiderProjects\contraseña.13_11_2023\contraseña.13_11_2023\obj\Debug\contraseña._13_11_2023.pdb
