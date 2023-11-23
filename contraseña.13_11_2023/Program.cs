@@ -10,6 +10,8 @@ namespace contraseña._13_11_2023;
 
 class Program
 {
+    
+    static bool passwordFound = false;
     static void Main()
     {
         string path = "./2151220-passwords.txt";
@@ -35,13 +37,14 @@ class Program
         }
     }
 
+
 // Encuentra la contraseña encriptada, transformando una lista de contraseñas a hash256 y comprarando cada contraseña
 // con la contreña encriptada
 // @param limit Donde empieza a leer el archivo de contraseñas
 // @param lines Archivo de contraseñas, metido en una lista
 // @param encriptedPassword Contraseña a desencriptar
 // @param numberLineDivision numero de lineas que debe leer
-    static void UnEncrypter(int limit, List<String> lines, string encriptedPassword, int numberLineDivision)
+    static void UnEncrypter(int limit, List<string> lines, string encryptedPassword, int numberLineDivision)
     {
         try
         {
@@ -49,19 +52,21 @@ class Program
 
             bool continues = true;
 
-            while (continues)
+            while (continues && !passwordFound)
             {
                 Stopwatch stopwatch = new Stopwatch();
                 stopwatch.Start();
                 foreach (var i in actualLines)
                 {
-                    if (encriptedPassword == CalculateSha256(i))
+                    if (encryptedPassword == CalculateSha256(i))
                     {
-                        Console.WriteLine("Contraseña Encriptada : " + encriptedPassword);
+                        Console.WriteLine("Contraseña Encriptada : " + encryptedPassword);
                         Console.WriteLine("Contraseña : " + i);
                         stopwatch.Stop();
                         Console.WriteLine("\nTiempo transcurrido : " + stopwatch.ElapsedMilliseconds + " ms");
                         continues = false;
+                        passwordFound = true;
+                        break;
                     }
                 }
             }
@@ -108,4 +113,5 @@ class Program
             return stringBuilder.ToString();
         }
     }
+    
 }
