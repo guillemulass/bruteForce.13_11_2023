@@ -49,10 +49,8 @@ class Program
         try
         {
             var actualLines = lines.GetRange(limit, numberLineDivision);
-
-            bool continues = true;
-
-            while (continues && !passwordFound)
+            
+            while (!passwordFound)
             {
                 Stopwatch stopwatch = new Stopwatch();
                 stopwatch.Start();
@@ -64,7 +62,6 @@ class Program
                         Console.WriteLine("Contraseña : " + i);
                         stopwatch.Stop();
                         Console.WriteLine("\nTiempo transcurrido : " + stopwatch.ElapsedMilliseconds + " ms");
-                        continues = false;
                         passwordFound = true;
                         break;
                     }
